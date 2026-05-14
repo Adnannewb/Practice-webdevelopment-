@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #191919;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    padding: 15px;
+
+}
+.tooltips-container{
+    border: 1px solid #fff;
+    width: 100%;
+    max-width: 518px;
+    height: 237px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 68px;
+
+}
+.tooltips-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    gap: 20px;
+    cursor: default;
+    position: relative;
+    
+}
+
+.mongodb{
+    color: #47A248;
+
+}
+.express{
+    color: #FFFFFF;
+
+}
+.react{
+    color:  #61DAFB;
+
+}
+.node{
+    color: #8CC84B;
+
+}
+
+.tooltip{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    position:absolute;
+    top: 16px;
+    border-radius: 24px;
+    padding: 8px 14px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+
+
+}
+.tooltips-icon:hover .tooltip{
+    top: -48px;
+    opacity: 1;
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+.mongodb .tooltip{
+    background-color: #47A248;
+}
+.mongodb .tooltip::after{
+    border-color: #47A248 transparent transparent transparent;
+}
+.express .tooltip{
+    background-color: #FFFFFF;
+    color: black;
+    
+}
+.express .tooltip::after{
+    border-color: #FFFFFF transparent transparent transparent;
+}
+.react .tooltip{
+    background-color: #61DAFB;
+    color: black;
+    
+
+}
+.react .tooltip::after{
+    border-color: #61DAFB transparent transparent transparent;
+}
+.node .tooltip{
+    background-color: #8CC84B;
+    color: black;
+    }
+.node .tooltip::after{
+    border-color: #8CC84B transparent transparent transparent;
+}
