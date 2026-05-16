@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FCF0FF;
+    /* padding: 10px; */
+
+}
+.top-stripe{
+    width: 1289px;
+    height: 52px;
+    left: -6px;
+    background-color: #9D40E4;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-inline:16px ;
+    
+}
+.profile-card{
+    width: 100%;
+    max-width: 335px;
+    /* top: 235px;
+    left: 477px; */
+    background: #9D40E4;
+    border-radius: 30px;
+    padding: 32px 22px 24px;
+    position: relative;
+    
+
+}
+.icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+    position: relative;
+}
+.icons-container img:hover{
+    cursor: pointer;
+    
+}
+
+.profile-content{
+
+    text-align: center;
+    width: 100%;
+    max-width: 291px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+
+}
+.social-icons{
+    padding: 16px 0;
+    border-top: 1px solid #F5F5F5;
+}
+.view-profile{
+border-radius: 25px;
+display: inline-block;
+text-decoration: none;
+padding: 8px 20px;
+margin-bottom: 22px;
+margin-top: 10px;
+background-image: linear-gradient(90deg, #FECD2F 0%, #FEB02F 100%);
+font-family: Nunito;
+font-weight: 700;
+font-size: 15px;
+color: #FFFAED;
+
+}
+.view-profile:hover{
+    background-image: linear-gradient(0deg, #FECD2F 0%, #FEB02F 100%);
+    
+}
+.heading{
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.para{
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 16px;
+    color: #A6A6A6;
+
+    
+}
+.avatar-container{
+    display: inline-block;
+    margin-top: -50px;
+    border: 8px solid white;
+    border-radius: 100%;
+    position: relative;
+
+}
+
+.green-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    bottom: 5px;
+    right: 5px;
+    background-color: #87E57B;
+    border: 3.5px solid #FFFFFF;
+    border-radius: 100%;
+    box-sizing: content-box;
+}
+
+.circle{
+    width: 163.56597731677905px;
+    height: 160.26547075902576px;
+    border-radius: 100%;
+    position: absolute;
+    /* transform: rotate(175.55 deg); */
+    background-image: linear-gradient(0deg, #9C45DE 0%, #A453E2 100%);
+
+}
+
+.circle1{
+    width: 116.565977px;
+    height: 116.265471px;
+    top: 58px;
+    left: 1px;
+}
+.circle2{
+   top: 17px;
+    left: 136px;
+}
+
+.lowerstripe{
+    width: 1289px;
+    height: 20px;
+    /* left: -6px; */
+    background-color: #9D40E4;
+    position: fixed;
+    bottom: 0;
+    
+
+}

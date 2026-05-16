@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-stripe"></div>
+    <div class="container">
+      <div class="profile-card">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="icons-container">
+          <img src="Like-btn.svg" alt="Like" />
+          <img onclick="navigator.share({url:location.href})" src="🦆 icon _share_.svg" alt="share" class="share-icon" />
+        </div>
+        <div class="profile-content">
+          <div class="avatar-container">
+            <img class="user-avatar" src="User Avatar.svg" alt="Avatar" />
+            <div class="green-dot"></div>
+          </div>
+          <h2 class="heading">John Doe</h2>
+          <p class="para">Web Developer</p>
+          <a href="#" class="view-profile">View Full Profile</a>
+          <div class="social-icons">
+            <img src="linkedin-square.svg" alt="linkedin" />
+            <img src="twitter-square.svg" alt="twitter" />
+            <img src="telegram-square.svg" alt="telegram" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lowerstripe"></div>
+  </body>
+</html>
