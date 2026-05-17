@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+
+header{
+    display: flex;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A3342;
+    /* padding: 20px; */
+
+}
+li ul{
+    display: none;
+    
+}
+li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+}
+.nav-user-container{
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+    padding-left: 0;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
