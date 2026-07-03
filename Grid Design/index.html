@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+       
+        <p class="whats-new">What’s new</p>
+        <h2 class="tittle">Unleash Creativity</h2>
+        <p class="subtittle">Unleash your inner designer with our customizable furniture options, allowing you to create a space that reflects your unique vision</p>
+        <div class="image-grid">
+            <img src="images/Image 1.png" alt="" class="image1">
+            <img src="images/Image 2.png" alt="" class="image2">
+            <img src="images/Image 3.png" alt="" class="image3">
+        </div>
+    </div>
+
+    <script>
+        let card= document.querySelector(".card")
+        function floatcard(){
+            const t=Date.now()*0.001;
+            const x=Math.sin(t*0.8)*5;
+            const y=Math.sin(t*1.4)*10;
+            const rotate=Math.sin(t*1.4)*2;
+            card.style.transform=`translate(${x}px,${y}px) rotate(${rotate}deg)`;
+            const blur=35+Math.sin(t*2)*8;
+            card.style.boxShadow=`${20+y}px ${blur}px rgba(0,0,0,.20)`;
+            requestAnimationFrame(floatcard);
+
+        }
+        floatcard()
+    </script>
+</body>
+</html>
