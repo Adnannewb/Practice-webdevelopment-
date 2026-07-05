@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(236, 231, 225);
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.card{
+    max-width: 600px;
+    padding: 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color:bisque;
+    border-radius: 20px;
+}
+.game-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#number{
+    width: 100%;
+    max-width: 200px;
+    font-style: italic;
+    color: #000000;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+}
+#number:focus {
+    outline: none;
+    border: 2px solid rgb(39, 162, 187);
+}
+.submit{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(39, 162, 187);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    transition: all 0.3s ease;
+
+}
+.submit:hover{
+    background-color:  rgb(21, 136, 159);
+    transform: scale(1.02);
+}
+.start-game{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(39, 162, 187);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+.start-game:disabled{
+    cursor: not-allowed;
+}
+
+.start-game:hover{
+    background-color:  rgb(21, 136, 159);
+    transform: scale(1.02);
+}
+
+.your-guesses{
+    display: none;
+    transition: all 0.3s ease;
+}
